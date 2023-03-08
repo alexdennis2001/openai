@@ -1,0 +1,21 @@
+<div>
+    <Head>
+      <title>OpenAI Image Generator</title>
+      <!-- <link rel="icon" href="/dog.png" /> -->
+    </Head>
+
+    <main className=main>
+    <!-- <img src="/assets/dog.png" className=icon /> -->
+      <h3>Generate your Image!</h3>
+        <form>
+            <input
+            type="text"
+            name="image"
+            placeholder="Enter your image idea"
+            [(ngModel)]= "image"
+            />
+            <input type="button" value="Generate Image" (click)="postCompletition()" />
+        </form>
+        <img [src]="result" alt="">
+    </main>
+</div>

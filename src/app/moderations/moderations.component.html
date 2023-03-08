@@ -1,0 +1,21 @@
+<div>
+    <Head>
+      <title>OpenAI Quickstart</title>
+    </Head>
+
+    <main className=main>
+      <h3>Check Moderations!</h3>
+      <p>Is this text flagged from OpenAI?</p>
+        <form>
+            <input
+            type="text"
+            name="promt"
+            placeholder="Check my text..."
+            [(ngModel)]= "prompt"
+            />
+            <input type="button" value="Generate Check" (click)="postCompletition()" />
+        </form>
+        <br>
+        <div className=result> {{result}} </div>
+    </main>
+</div>

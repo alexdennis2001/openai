@@ -1,0 +1,19 @@
+<div>
+    <Head>
+      <title>OpenAI Quickstart</title>
+    </Head>
+
+    <main className=main>
+      <h3>Edit my text!</h3>
+        <form>
+            <input
+            type="text"
+            name="promt"
+            placeholder="Edit my text..."
+            [(ngModel)]= "prompt"
+            />
+            <input type="button" value="Generate Fix" (click)="postCompletition()" />
+        </form> 
+        <div className=result> {{result}} </div>
+    </main>
+</div>

@@ -16,7 +16,7 @@ export class ImagesgenerationService {
   httpOptions = {
     headers: new HttpHeaders({
     'Content-Type': 'application/json',
-    'Authorization': 'Bearer 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',
+    'Authorization': 'Bearer ' + process.env['NG_APP_KEY'],
     })
   }
 
